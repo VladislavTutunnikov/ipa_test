@@ -1,0 +1,9 @@
+{
+  "dart.previewLsp": true,
+  "dart.showInspectorNotificationsForWidgetErrors": true,
+  "dart.analysisExcludedFolders": [],
+  "dart.analysisOptions": ".analysis_options",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
+}
