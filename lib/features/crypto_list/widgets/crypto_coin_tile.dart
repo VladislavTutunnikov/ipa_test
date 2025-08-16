@@ -12,11 +12,11 @@ class CryptoCoinTile extends StatelessWidget {
       leading: SizedBox(
         height: 55,
         width: 55,
-        child: Image.network(coin.imageUrl),
+        child: Image.network(coin.details.fullImageUrl),
       ),
       title: Text(coin.name, style: Theme.of(context).textTheme.bodyMedium),
       subtitle: Text(
-        '${coin.priceInUSD}\$',
+        '${coin.details.priceInUSD}\$',
         style: Theme.of(context).textTheme.labelSmall,
       ),
       trailing: Icon(Icons.arrow_forward_ios),

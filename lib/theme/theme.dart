@@ -25,5 +25,10 @@ final darkTheme = ThemeData(
       fontWeight: FontWeight.w700,
       fontSize: 16,
     ),
+    headlineMedium: TextStyle(
+      color: Colors.white,
+      fontSize: 25,
+      fontWeight: FontWeight.w700,
+    ),
   ),
 );
