@@ -1,6 +1,8 @@
 import 'dart:async';
 
+import 'package:auto_route/annotations.dart';
 import 'package:crypto_coins_list/features/crypto_list/bloc/crypto_list_bloc.dart';
+import 'package:crypto_coins_list/generated/l10n.dart';
 import 'package:crypto_coins_list/repositories/crypto_coins/crypto_coins.dart';
 import 'package:flutter/material.dart';
 import 'package:crypto_coins_list/features/crypto_list/widgets/widgets.dart';
@@ -8,6 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:talker_flutter/talker_flutter.dart';
 
+@RoutePage()
 class CryptoListScreen extends StatefulWidget {
   const CryptoListScreen({super.key});
 
@@ -73,11 +76,11 @@ class _CryptoListScreenState extends State<CryptoListScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      'Something went wrong...',
+                      S.of(context).errorTitle,
                       style: Theme.of(context).textTheme.headlineMedium,
                     ),
                     Text(
-                      'Please try again later',
+                      S.of(context).errorSubtitle,
                       style: Theme.of(context).textTheme.labelSmall,
                     ),
                     SizedBox(height: 30),
@@ -85,7 +88,7 @@ class _CryptoListScreenState extends State<CryptoListScreen> {
                       onPressed: () {
                         _cryptoListBloc.add(LoadCryptoList());
                       },
-                      child: Text('Try again'),
+                      child: Text(S.of(context).errorButtonText),
                     ),
                     //TextButton(onPressed: () {}, child: Text('Try again')),
                   ],

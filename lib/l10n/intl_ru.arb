@@ -1,0 +1,8 @@
+{
+  "errorTitle": "Что-то пошло не так...",
+  "errorSubtitle": "Пожалуйста попробуйте еще раз",
+  "errorButtonText": "Попробовать снова",
+  "highPrice": "Макс. за 24 часа",
+  "lowPrice": "Мин. за 24 часа",
+  "priceText": "{price} $"
+}

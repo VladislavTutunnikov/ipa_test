@@ -1,0 +1,8 @@
+{
+  "errorTitle": "Something went wrong...",
+  "errorSubtitle": "Please try again later",
+  "errorButtonText": "Try again",
+  "highPrice": "High 24 Hour",
+  "lowPrice": "Low 24 Hour",
+  "priceText": "{price} $"
+}
